@@ -4,184 +4,304 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ultima Style Homepage</title>
+        <title>Ultima Replenishers - Home</title>
         <link rel="stylesheet" href="styles.css" />
-        <!-- Google font (optional) -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet">
     </head>
 
     <body>
-
-        <!-- Top announcement bar -->
-        <div class="top-banner">
-            <div class="top-banner-inner">
-                <span class="chevron chevron-left">&lt;</span>
-                <span class="top-banner-text">
-                    Shop our New Ultimate Variety pack!
-                </span>
-                <span class="chevron chevron-right">&gt;</span>
-            </div>
+        <!-- Top Sale Bar -->
+        <div class="top-sale-bar">
+            Our biggest sale of the year – <strong>25% off everything!</strong>
         </div>
 
-        <!-- Main header / nav -->
+        <!-- Navigation -->
         <header class="site-header">
-            <div class="header-inner">
-                <!-- Logo -->
+            <div class="nav-inner container">
                 <div class="logo">
-                    <span class="logo-pill">Ul</span>
-                    <div class="logo-text">
-                        <span class="logo-main">Ultima</span>
-                        <span class="logo-sub">Replenisher</span>
-                    </div>
+                    <img src="images/logo.png" alt="Ultima Replenishers Logo">
                 </div>
 
-                <!-- Nav links -->
                 <nav class="main-nav">
-                    <a href="#">Shop by flavor</a>
-                    <a href="#">Shop by benefit</a>
-                    <a href="#">Learn</a>
-                    <a href="#">Subscribe &amp; save</a>
-                    <a href="#">Find in stores</a>
+                    <a href="#shop">Shop by flavor</a>
+                    <a href="#shop">Shop by benefit</a>
+                    <a href="#learn">Learn</a>
+                    <a href="#subscribe">Subscribe &amp; save</a>
+                    <a href="#stores">Find in stores</a>
                 </nav>
 
-                <!-- Right actions -->
-                <div class="header-actions">
-                    <a href="#" class="rewards-link">Rewards</a>
-                    <button class="icon-btn" aria-label="Account">
-                        <span class="icon-circle"></span>
-                    </button>
-                    <button class="icon-btn" aria-label="Wishlist">
-                        ♥
-                    </button>
-                    <button class="icon-btn" aria-label="Cart">
-                        🛒
-                    </button>
+                <div class="nav-actions">
+                    <a href="#rewards" class="nav-link">Rewards</a>
+                    <span class="nav-icon">👤</span>
+                    <span class="nav-icon">🛒</span>
                 </div>
             </div>
         </header>
 
-        <!-- Pink promo strip -->
-        <section class="promo-strip">
-            <div class="promo-inner">
-                <span>My fav electrolytes!</span>
-                <span class="drop">💧</span>
-                <span>Delicious flavors!</span>
-                <span class="drop">💧</span>
-                <span>Each sip is a treat!</span>
-                <span class="drop">💧</span>
-                <span>I drink 2 of these a day and feel such a difference!</span>
-                <span class="drop">💧</span>
+        <!-- Pink moving marquee strip -->
+        <div class="highlight-strip">
+            <div class="highlight-track">
+                <!-- copy 1 -->
+                <div class="highlight-strip-inner">
+                    <span>💧 Each sip is a treat!</span>
+                    <span>💧 I drink 2 of these a day!</span>
+                    <span>💧 Sugar-free, zero calories!</span>
+                    <span>💧 My fav electrolytes!</span>
+                    <span>💧 Delicious flavors!</span>
+                </div>
+                <!-- copy 2 (same text, for seamless loop) -->
+                <div class="highlight-strip-inner">
+                    <span>💧 Each sip is a treat!</span>
+                    <span>💧 I drink 2 of these a day!</span>
+                    <span>💧 Sugar-free, zero calories!</span>
+                    <span>💧 My fav electrolytes!</span>
+                    <span>💧 Delicious flavors!</span>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Left side discount ribbon -->
-        <button class="side-ribbon">
-            <span class="close-btn">✕</span>
-            <span class="ribbon-text">20% OFF</span>
-        </button>
-
-        <!-- MAIN CONTENT -->
         <main>
 
-            <!-- Hero section -->
-            <section class="hero">
-                <div class="hero-inner">
+            <!-- SECTION 1: BALANCED DAILY HYDRATION (YELLOW HERO) -->
+            <section class="hero-section">
+                <!-- falling droplets at the top ONLY -->
+                <div class="hero-bg-droplets">
+                    <span class="droplet d1"></span>
+                    <span class="droplet d2"></span>
+                    <span class="droplet d3"></span>
+                    <span class="droplet d4"></span>
+                </div>
 
-                    <!-- Left text column -->
-                    <div class="hero-copy">
-                        <h1 class="hero-title">
-                            BALANCED DAILY<br>
-                            hydration
-                        </h1>
-
-                        <p class="hero-subtitle">
-                            6 key electrolytes &bull; 0 sugar, calories or carbs
+                <div class="container hero-grid">
+                    <div class="hero-text">
+                        <p class="eyebrow">6 KEY ELECTROLYTES • 0 SUGAR • 0 CALORIES • 0 CARBS</p>
+                        <h1>BALANCED DAILY<br>HYDRATION</h1>
+                        <p class="hero-subtext">
+                            Clean, refreshing hydration to support everyday energy, focus, and more.
                         </p>
 
-                        <p class="hero-guarantee">
-                            60-day “You’ll 💜 it” guarantee*
-                        </p>
-
-                        <button class="primary-btn">SHOP NOW</button>
-
-                        <p class="hero-footnote">
-                            *See details <a href="#">here</a>.
-                        </p>
+                        <a href="#shop" class="btn-primary">SHOP NOW</a>
+                        <p class="guarantee-text">60-day “you’ll ❤️ it” guarantee*</p>
                     </div>
 
-                    <!-- Right image collage -->
-                    <div class="hero-visual">
-                        <div class="photo-frame frame-large">
-                            <div class="photo placeholder-1"></div>
-                        </div>
-
-                        <div class="photo-frame frame-top-right">
-                            <div class="photo placeholder-2"></div>
-                        </div>
-
-                        <div class="photo-frame frame-bottom-right">
-                            <div class="photo placeholder-3"></div>
-                        </div>
+                    <div class="hero-collage">
+                        <!-- your combined 3-photo collage image -->
+                        <img src="images/hero-collage.png" alt="Ultima collage">
                     </div>
                 </div>
             </section>
 
-            <!-- NEW: “Shop electrolyte mixes” section -->
-            <section class="mixes">
-                <div class="mixes-inner">
-                    <h2 class="mixes-title">Shop electrolyte mixes</h2>
-                    <p class="mixes-subtitle">EVERYDAY HYDRATION PACKED WITH FLAVOR!</p>
+            <!-- SECTION 2: SHOP ELECTROLYTE MIXES (SCROLL + YELLOW WAVE) -->
+            <section id="shop" class="product-strip">
+                <!-- falling droplets between hero + wave -->
+                <div class="droplet-strip">
+                    <span class="strip-drop sd1"></span>
+                    <span class="strip-drop sd2"></span>
+                    <span class="strip-drop sd3"></span>
+                    <span class="strip-drop sd4"></span>
+                    <span class="strip-drop sd5"></span>
+                    <span class="strip-drop sd6"></span>
+                    <span class="strip-drop sd7"></span>
+                    <span class="strip-drop sd8"></span>
+                </div>
 
-                    <div class="mixes-grid">
-                        <!-- Card 1 -->
-                        <article class="mix-card">
-                            <span class="badge badge-pink">BEST SELLER</span>
-                            <div class="mix-image mix-img1"></div>
-                            <h3 class="mix-name">Strawberry Margarita</h3>
-                        </article>
-
-                        <!-- Card 2 -->
-                        <article class="mix-card">
-                            <span class="badge badge-pink">BEST SELLER</span>
-                            <div class="mix-image mix-img2"></div>
-                            <h3 class="mix-name">Lemonade</h3>
-                        </article>
-
-                        <!-- Card 3 -->
-                        <article class="mix-card">
-                            <span class="badge badge-pink">FAVORITE</span>
-                            <div class="mix-image mix-img3"></div>
-                            <h3 class="mix-name">Original Variety</h3>
-                        </article>
-
-                        <!-- Card 4 -->
-                        <article class="mix-card">
-                            <span class="badge badge-pink">NEW</span>
-                            <div class="mix-image mix-img4"></div>
-                            <h3 class="mix-name">Ultimate Variety</h3>
-                        </article>
-
-                        <!-- Card 5 -->
-                        <article class="mix-card">
-                            <div class="mix-image mix-img5"></div>
-                            <h3 class="mix-name">TeaFresher Variety</h3>
-                        </article>
+                <div class="container product-container">
+                    <div class="section-heading">
+                        <h2>Shop electrolyte mixes</h2>
+                        <p>EVERYDAY HYDRATION PACKED WITH FLAVOR!</p>
                     </div>
 
-                    <button class="primary-btn mixes-btn">
-                        EXPLORE ALL FLAVORS
-                    </button>
+                    <!-- big yellow wave background with products sitting over it -->
+                    <div class="product-wave">
+                        <div class="product-wave-bg"></div>
+
+                        <!-- left/right arrows -->
+                        <button class="product-arrow left" type="button">&#10094;</button>
+                        <button class="product-arrow right" type="button">&#10095;</button>
+
+                        <!-- HORIZONTAL SCROLLER -->
+                        <div class="product-scroller">
+                            <div class="product-track">
+
+                                <!-- Strawberry -->
+                                <article class="product-card card-strawberry">
+                                    <div class="badge">BEST SELLER</div>
+                                    <img src="images/product-strawberry.png" alt="Strawberry Margarita">
+                                    <h3>Strawberry Margarita</h3>
+                                    <div class="product-hover-info">
+                                        0 sugar • 6 key electrolytes
+                                    </div>
+                                </article>
+
+                                <!-- Lemonade -->
+                                <article class="product-card card-lemonade">
+                                    <div class="badge">BEST SELLER</div>
+                                    <img src="images/product-lemonade.png" alt="Lemonade">
+                                    <h3>Lemonade</h3>
+                                    <div class="product-hover-info">
+                                        Bright citrus • daily hydration
+                                    </div>
+                                </article>
+
+                                <!-- Original Variety -->
+                                <article class="product-card card-original">
+                                    <div class="badge">FAVORITE</div>
+                                    <img src="images/product-original.png" alt="Original Variety">
+                                    <h3>Original Variety</h3>
+                                    <div class="product-hover-info">
+                                        Mix &amp; match 6 flavors
+                                    </div>
+                                </article>
+
+                                <!-- Ultimate Variety -->
+                                <article class="product-card card-ultimate">
+                                    <div class="badge">NEW</div>
+                                    <img src="images/product-ultimate.png" alt="Ultimate Variety">
+                                    <h3>Ultimate Variety</h3>
+                                    <div class="product-hover-info">
+                                        Crowd-pleasing party pack
+                                    </div>
+                                </article>
+
+                                <!-- Tea -->
+                                <article class="product-card card-tea">
+                                    <img src="images/product-tea.png" alt="TeaFresher Variety">
+                                    <h3>TeaFresher Variety</h3>
+                                    <div class="product-hover-info">
+                                        Tea-inspired electrolyte sips
+                                    </div>
+                                </article>
+
+                                <!-- extras -->
+                                <article class="product-card card-cranberry">
+                                    <img src="images/product-cranberry.png" alt="Cranberry Pomegranate">
+                                    <h3>Cranberry Pomegranate</h3>
+                                    <div class="product-hover-info">
+                                        Tart • bold • refreshing
+                                    </div>
+                                </article>
+
+                                <article class="product-card card-raspberry">
+                                    <img src="images/product-raspberry.png" alt="Blue Raspberry">
+                                    <h3>Blue Raspberry</h3>
+                                    <div class="product-hover-info">
+                                        Electric blue berry blast
+                                    </div>
+                                </article>
+
+                                <article class="product-card card-grape">
+                                    <img src="images/product-grape.png" alt="Grape">
+                                    <h3>Grape</h3>
+                                    <div class="product-hover-info">
+                                        Juicy grape, zero sugar
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="center explore-btn-wrap">
+                        <a href="#shop" class="btn-secondary">EXPLORE ALL FLAVORS</a>
+                    </div>
                 </div>
+            </section>
+
+            <!-- SECTION 3: WHAT'S INSIDE – 50/50 split exactly like screenshot -->
+            <section class="inside-section" id="learn">
+                <div class="inside-grid-full">
+                    <div class="inside-left-full">
+                        <img src="images/inside-card.png" alt="What's inside info">
+                    </div>
+                    <div class="inside-right-full">
+                        <img src="images/inside-person.png" alt="Person drinking Ultima">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: JOIN / NEWSLETTER -->
+            <section class="join-section" id="subscribe">
+                <div class="join-bg">
+                    <div class="join-bg-inner">
+                        <div class="container join-grid">
+                            <div class="join-left">
+                                <img src="images/join-glasses.png" alt="Colorful electrolyte drinks in the sky">
+                            </div>
+
+                            <div class="join-right">
+                                <h2>Want to sip, save &amp; celebrate?</h2>
+                                <p>
+                                    Join the Ultima crew! Drop your email and get exclusive offers, recipes,
+                                    fun promos, and new flavor alerts. Let’s make hydration even more exciting. 💧✨
+                                </p>
+
+                                <form class="join-form">
+                                    <input type="email" placeholder="you@domain.com" required>
+                                    <button type="submit">JOIN</button>
+                                </form>
+
+                                <p class="join-legal">
+                                    By signing up, you agree to our terms of service and privacy policy.
+                                </p>
+
+                                <div class="social-row">
+                                    <a href="#" aria-label="Facebook">📘</a>
+                                    <a href="#" aria-label="Instagram">📸</a>
+                                    <a href="#" aria-label="TikTok">🎵</a>
+                                    <a href="#" aria-label="YouTube">▶️</a>
+                                    <a href="#" aria-label="Pinterest">📌</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simple footer links -->
+                <footer class="site-footer">
+                    <div class="container footer-grid">
+                        <div class="footer-column">
+                            <h4>Ultima Replenishers</h4>
+                            <a href="#about">About</a>
+                            <a href="#stores">Find in stores</a>
+                            <a href="#rewards">Rewards</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Shop</h4>
+                            <a href="#shop">All products</a>
+                            <a href="#subscribe">Subscribe &amp; save</a>
+                            <a href="#gift">Gift cards</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Support</h4>
+                            <a href="#faq">FAQ</a>
+                            <a href="#contact">Contact</a>
+                            <a href="#policy">Shipping &amp; returns</a>
+                        </div>
+                    </div>
+                </footer>
             </section>
 
         </main>
 
-        <!-- Chat bubble -->
-        <button class="chat-bubble" aria-label="Chat">
-            💬
-        </button>
+        <!-- tiny JS just for arrow scroll -->
+        <script>
+            const scroller = document.querySelector('.product-scroller');
+            const leftBtn = document.querySelector('.product-arrow.left');
+            const rightBtn = document.querySelector('.product-arrow.right');
 
+            if (scroller && leftBtn && rightBtn) {
+                const scrollAmount = 260;
+
+                leftBtn.addEventListener('click', () => {
+                    scroller.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                });
+
+                rightBtn.addEventListener('click', () => {
+                    scroller.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                });
+            }
+        </script>
     </body>
 
 </html>
