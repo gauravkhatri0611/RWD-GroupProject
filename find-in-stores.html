@@ -4,19 +4,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ultima Replenishers - Home</title>
+        <title>Find in stores – Ultima Replenisher</title>
         <link rel="stylesheet" href="styles.css" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet">
     </head>
 
     <body>
+
         <!-- Top Sale Bar -->
         <div class="top-sale-bar">
             Our biggest sale of the year – <strong>25% off everything!</strong>
         </div>
 
-        <!-- HEADER -->
+        <!-- HEADER (same as other pages) -->
         <header class="site-header">
             <div class="nav-inner container">
                 <div class="logo">
@@ -30,7 +31,7 @@
                             Shop by flavor
                         </a>
 
-                        <!-- FLAVOR MEGA MENU -->
+                        <!-- MEGA MENU PANEL -->
                         <div class="mega-menu">
                             <div class="mega-inner">
                                 <!-- LEFT COLUMN: TEXT LINKS -->
@@ -95,10 +96,10 @@
                         </div>
                     </div>
 
-                    <!-- OTHER NAV LINKS (no shop-by-benefit) -->
+                    <!-- OTHER NAV LINKS -->
                     <a href="learn.html" class="nav-link-main">Learn</a>
-                    <a href="subscribe-save.html" class="nav-link-main">Subscribe &amp; save</a>
-                    <a href="find-in-stores.html" class="nav-link-main">Find in stores</a>
+                    <a href="#subscribe" class="nav-link-main">Subscribe &amp; save</a>
+                    <a href="find-in-stores.html" class="nav-link-main nav-link-active">Find in stores</a>
                 </nav>
 
                 <div class="nav-actions">
@@ -109,8 +110,7 @@
             </div>
         </header>
 
-
-        <!-- Pink marquee -->
+        <!-- Optional pink marquee, keep if you’re using it on other pages -->
         <div class="highlight-strip">
             <div class="highlight-track">
                 <div class="highlight-strip-inner">
@@ -130,161 +130,92 @@
             </div>
         </div>
 
-        <main>
-            <!-- HERO -->
-            <section class="hero-section">
-                <div class="hero-bg-droplets">
-                    <span class="droplet d1"></span>
-                    <span class="droplet d2"></span>
-                    <span class="droplet d3"></span>
-                    <span class="droplet d4"></span>
+        <main class="stores-main">
+            <!-- HERO TITLE -->
+            <section class="stores-hero">
+                <div class="container">
+                    <h1>Ultima hits the aisles</h1>
+                    <p class="stores-subtitle">
+                        Find Ultima near you &amp; fuel your hydration!<br />
+                        Use the store locator to find us at your local store’s health &amp; wellness or grocery aisle.
+                    </p>
                 </div>
+            </section>
 
-                <div class="container hero-grid">
-                    <div class="hero-text">
-                        <p class="eyebrow">6 KEY ELECTROLYTES • 0 SUGAR • 0 CALORIES • 0 CARBS</p>
-                        <h1>BALANCED DAILY<br>HYDRATION</h1>
-                        <p class="hero-subtext">
-                            Clean, refreshing hydration to support everyday energy, focus, and more.
+            <!-- STORE LOCATOR LAYOUT -->
+            <section class="stores-layout container">
+                <!-- LEFT PANEL -->
+                <aside class="stores-panel">
+                    <div class="stores-search-row">
+                        <label class="stores-input-wrap">
+                            <input type="text" placeholder="Search city or postal code">
+                            <span class="stores-search-icon">🔍</span>
+                        </label>
+                    </div>
+
+                    <div class="stores-info-row">
+                        <p class="stores-small">
+                            Showing 0 stores near Guelph, ON
                         </p>
 
-                        <a href="menu-all-flavors.html" class="btn-primary">SHOP NOW</a>
-                        <p class="guarantee-text">60-day “you’ll ❤️ it” guarantee*</p>
-                    </div>
+                        <button class="stores-filter-btn">FILTER PRODUCTS</button>
 
-                    <div class="hero-collage">
-                        <img src="images/hero-collage.png" alt="Ultima collage">
-                    </div>
-                </div>
-            </section>
+                        <p class="stores-small stores-small-margin">
+                            Showing results for all products
+                        </p>
 
-            <!-- PRODUCT STRIP -->
-            <section id="shop" class="product-strip">
-                <div class="droplet-strip">
-                    <span class="strip-drop sd1"></span>
-                    <span class="strip-drop sd2"></span>
-                    <span class="strip-drop sd3"></span>
-                    <span class="strip-drop sd4"></span>
-                    <span class="strip-drop sd5"></span>
-                    <span class="strip-drop sd6"></span>
-                    <span class="strip-drop sd7"></span>
-                    <span class="strip-drop sd8"></span>
-                </div>
-
-                <div class="container product-container">
-                    <div class="section-heading">
-                        <h2>Shop electrolyte mixes</h2>
-                        <p>EVERYDAY HYDRATION PACKED WITH FLAVOR!</p>
-                    </div>
-
-                    <div class="product-wave">
-                        <div class="product-wave-bg"></div>
-
-                        <button class="product-arrow left" type="button">&#10094;</button>
-                        <button class="product-arrow right" type="button">&#10095;</button>
-
-                        <div class="product-scroller">
-                            <div class="product-track">
-
-                                <!-- Strawberry -->
-                                <article class="product-card card-strawberry">
-                                    <div class="badge">BEST SELLER</div>
-                                    <img src="images/product-strawberry.png" alt="Strawberry Margarita">
-                                    <h3>Strawberry Margarita</h3>
-                                    <div class="product-hover-info">
-                                        0 sugar • 6 key electrolytes
-                                    </div>
-                                </article>
-
-                                <!-- Lemonade -->
-                                <article class="product-card card-lemonade">
-                                    <div class="badge">BEST SELLER</div>
-                                    <img src="images/product-lemonade.png" alt="Lemonade">
-                                    <h3>Lemonade</h3>
-                                    <div class="product-hover-info">
-                                        Bright citrus • daily hydration
-                                    </div>
-                                </article>
-
-                                <!-- Original Variety -->
-                                <article class="product-card card-original">
-                                    <div class="badge">FAVORITE</div>
-                                    <img src="images/product-original.png" alt="Original Variety">
-                                    <h3>Original Variety</h3>
-                                    <div class="product-hover-info">
-                                        Mix &amp; match 6 flavors
-                                    </div>
-                                </article>
-
-                                <!-- Ultimate Variety -->
-                                <article class="product-card card-ultimate">
-                                    <div class="badge">NEW</div>
-                                    <img src="images/product-ultimate.png" alt="Ultimate Variety">
-                                    <h3>Ultimate Variety</h3>
-                                    <div class="product-hover-info">
-                                        Crowd-pleasing party pack
-                                    </div>
-                                </article>
-
-                                <!-- TeaFresher links to product page -->
-                                <article class="product-card card-tea">
-                                    <a href="product-teafresher.html">
-                                        <img src="images/product-tea.png" alt="TeaFresher Variety">
-                                        <h3>TeaFresher Variety</h3>
-                                        <div class="product-hover-info">
-                                            Tea-inspired electrolyte sips
-                                        </div>
-                                    </a>
-                                </article>
-
-                                <!-- extras -->
-                                <article class="product-card card-cranberry">
-                                    <img src="images/product-cranberry.png" alt="Cranberry Pomegranate">
-                                    <h3>Cranberry Pomegranate</h3>
-                                    <div class="product-hover-info">
-                                        Tart • bold • refreshing
-                                    </div>
-                                </article>
-
-                                <article class="product-card card-raspberry">
-                                    <img src="images/product-raspberry.png" alt="Blue Raspberry">
-                                    <h3>Blue Raspberry</h3>
-                                    <div class="product-hover-info">
-                                        Electric blue berry blast
-                                    </div>
-                                </article>
-
-                                <article class="product-card card-grape">
-                                    <img src="images/product-grape.png" alt="Grape">
-                                    <h3>Grape</h3>
-                                    <div class="product-hover-info">
-                                        Juicy grape, zero sugar
-                                    </div>
-                                </article>
-
-                            </div>
+                        <div class="stores-message">
+                            <span class="stores-dot"></span>
+                            <span>We are unable to find any units in your area</span>
                         </div>
                     </div>
+                </aside>
 
-                    <div class="center explore-btn-wrap">
-                        <a href="menu-all-flavors.html" class="btn-secondary">EXPLORE ALL FLAVORS</a>
+                <!-- RIGHT MAP PANEL -->
+                <section class="stores-map">
+                    <!-- You can replace this with an actual embedded map or custom image -->
+                    <img src="images/store-map.png" alt="Store locator map">
+                    <p class="stores-map-credit">Powered by StoreLocator</p>
+                </section>
+            </section>
+
+            <!-- KEEP SHOPPING ONLINE BUTTON -->
+            <section class="stores-online-cta">
+                <button class="btn-secondary stores-online-btn">KEEP SHOPPING ONLINE</button>
+            </section>
+
+            <!-- RETAILER LOGOS -->
+            <section class="stores-retailers">
+                <div class="container stores-logo-row">
+                    <!-- Replace image sources with your actual logo files -->
+                    <div class="store-logo">
+                        <img src="images/logo-target.png" alt="Target">
+                    </div>
+                    <div class="store-logo">
+                        <img src="images/logo-wholefoods.png" alt="Whole Foods">
+                    </div>
+                    <div class="store-logo">
+                        <img src="images/logo-walmart.png" alt="Walmart">
+                    </div>
+                    <div class="store-logo">
+                        <img src="images/logo-cvs.png" alt="CVS">
+                    </div>
+                    <div class="store-logo">
+                        <img src="images/logo-natural-grocers.png" alt="Natural Grocers">
+                    </div>
+                    <div class="store-logo">
+                        <img src="images/logo-sprouts.png" alt="Sprouts">
+                    </div>
+                    <div class="store-logo">
+                        <img src="images/logo-wegmans.png" alt="Wegmans">
+                    </div>
+                    <div class="store-logo">
+                        <img src="images/logo-heb.png" alt="H-E-B">
                     </div>
                 </div>
             </section>
 
-            <!-- WHAT'S INSIDE -->
-            <section class="inside-section" id="learn">
-                <div class="inside-grid-full">
-                    <div class="inside-left-full">
-                        <img src="images/inside-card.png" alt="What's inside info">
-                    </div>
-                    <div class="inside-right-full">
-                        <img src="images/inside-person.png" alt="Person drinking Ultima">
-                    </div>
-                </div>
-            </section>
-
-            <!-- JOIN / NEWSLETTER -->
+            <!-- REUSE YOUR JOIN / NEWSLETTER SECTION -->
             <section class="join-section" id="subscribe">
                 <div class="join-bg">
                     <div class="join-bg-inner">
@@ -321,6 +252,7 @@
                     </div>
                 </div>
             </section>
+
         </main>
 
         <!-- FOOTER -->
@@ -329,7 +261,7 @@
                 <div class="footer-column">
                     <h4>Ultima Replenishers</h4>
                     <a href="#about">About</a>
-                    <a href="#stores">Find in stores</a>
+                    <a href="find-in-stores.html">Find in stores</a>
                     <a href="#rewards">Rewards</a>
                 </div>
                 <div class="footer-column">
@@ -347,24 +279,6 @@
             </div>
         </footer>
 
-        <!-- JS: product scroller -->
-        <script>
-            const scroller = document.querySelector('.product-scroller');
-            const leftBtn = document.querySelector('.product-arrow.left');
-            const rightBtn = document.querySelector('.product-arrow.right');
-
-            if (scroller && leftBtn && rightBtn) {
-                const scrollAmount = 260;
-
-                leftBtn.addEventListener('click', () => {
-                    scroller.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-                });
-
-                rightBtn.addEventListener('click', () => {
-                    scroller.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-                });
-            }
-        </script>
     </body>
 
 </html>
