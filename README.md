@@ -7,7 +7,7 @@ This project includes a complete home page, product catalog, product detail page
 
 ## 🚀 Live Demo
 Provide your deployed link here:  
-**https://your-vercel-url.vercel.app/**
+**https://ultimareplenishers.vercel.app/**
 
 ---
 
