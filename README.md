@@ -358,7 +358,7 @@ Create clickable flows:
 
 ```markdown
 # 🗂 Ultima Replenishers — Project Kanban Board  
-*(For 3 team members: Sukhbir, Person 2, Person 3)*
+*(For 3 team members: Gaurav, Sukhbir,Sunny)*
 
 Use in Notion / Trello / Jira / GitHub Projects.
 
