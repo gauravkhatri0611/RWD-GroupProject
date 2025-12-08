@@ -19,12 +19,22 @@
 
         <!-- HEADER (same as other pages) -->
         <header class="site-header">
+            <!-- Hidden checkbox for CSS-only mobile toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
             <div class="nav-inner container">
                 <div class="logo">
                     <a href="index.html">
                         <img src="images/logo.png" alt="Ultima Replenishers Logo">
                     </a>
                 </div>
+
+                <!-- Hamburger button (mobile only) -->
+                <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
 
                 <nav class="main-nav">
                     <!-- SHOP BY FLAVOR WITH MEGA MENU -->
@@ -35,8 +45,12 @@
 
                         <div class="mega-menu">
                             <div class="mega-inner">
-                                <!-- LEFT COLUMN: TEXT LINKS -->
+                                <!-- LEFT COLUMN: TEXT + LINKS + subtle animation -->
                                 <div class="mega-left">
+                                    <h4 class="mega-title">Browse by flavor</h4>
+                                    <p class="mega-subcopy">
+                                        Start with all flavors or dive into our fun Mocktini collection.
+                                    </p>
                                     <ul class="mega-links">
                                         <li>
                                             <a href="menu-all-flavors.html">
@@ -50,25 +64,8 @@
                                                 Mocktini
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="menu-best-sellers.html">
-                                                <span class="mega-bullet"></span>
-                                                Best sellers
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="menu-new-delicious.html">
-                                                <span class="mega-bullet"></span>
-                                                New &amp; delicious
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="menu-variety-packs.html">
-                                                <span class="mega-bullet"></span>
-                                                Variety packs
-                                            </a>
-                                        </li>
                                     </ul>
+                                    <div class="mega-drops"></div>
                                 </div>
 
                                 <!-- RIGHT COLUMN: PROMO CARDS -->
@@ -157,7 +154,7 @@
 
                     <div class="stores-info-row">
                         <p class="stores-small">
-                            Showing 0 stores near Guelph, ON
+                            Showing 0 stores near Kitchener, ON
                         </p>
 
                         <button class="stores-filter-btn">FILTER PRODUCTS</button>
@@ -175,9 +172,15 @@
 
                 <!-- RIGHT MAP PANEL -->
                 <section class="stores-map">
-                    <!-- You can replace this with an actual embedded map or custom image -->
-                    <img src="images/store-map.png" alt="Store locator map">
-                    <p class="stores-map-credit">Powered by StoreLocator</p>
+                    <div class="stores-map-glow"></div>
+                    <div class="stores-map-drops"></div>
+                    <div class="stores-map-inner">
+                        <!-- Replace src with your own Google Maps embed URL -->
+                        <iframe title="Ultima near you" src="https://www.google.com/maps?q=Kitchener,+ON&output=embed"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                        <p class="stores-map-credit">Map data © Google</p>
                 </section>
             </section>
 
@@ -217,7 +220,7 @@
                 </div>
             </section>
 
-            <!-- REUSE YOUR JOIN / NEWSLETTER SECTION -->
+            <!-- JOIN / NEWSLETTER SECTION -->
             <section class="join-section" id="subscribe">
                 <div class="join-bg">
                     <div class="join-bg-inner">
