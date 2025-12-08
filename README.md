@@ -1,6 +1,6 @@
 # 💧 Ultima Replenishers – Frontend Website (Final Project)
 
-A fully responsive, animated, HTML/CSS-based e-commerce experience inspired by Ultima Replenishers.  
+A fully responsive, animated, HTML/CSS-based e-commerce experience.  
 This project includes a complete home page, product catalog, product detail pages, store locator, subscribe & save page, and a complete design system.
 
 ---
