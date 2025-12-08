@@ -2998,21 +2998,29 @@ img {
 
 .badge,
 .product-eyebrow {
-  background-image: linear-gradient(120deg, #ff2c8b, #fbc501, #b39aff, #ff2c8b);
-  background-size: 200% 200%;
-  animation: badgeShimmer 8s linear infinite;
+  background-image: linear-gradient(
+    120deg,
+    #ff2c8b,
+    #c01461,
+    #9b4dff,
+    #ff2c8b
+  );
+  background-size: 220% 220%;
+  animation: badgeShimmer 7s linear infinite;
 }
+
 .flavor-badge {
   background-image: linear-gradient(
     120deg,
-    #590028,
-    #a1004f,
-    #8500d2,
-    #5a0be5
+    #ff3a95,
+    #d21878,
+    #9b4dff,
+    #7a2cff
   );
-  background-size: 250% 250%;
-  animation: badgeShimmer 8s linear infinite;
+  background-size: 260% 260%;
+  animation: badgeShimmer 7s linear infinite;
 }
+
 
 
 /* quantity control buttons – tiny pop on hover */
