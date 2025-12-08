@@ -360,8 +360,6 @@ Create clickable flows:
 # 🗂 Ultima Replenishers — Project Kanban Board  
 *(For 3 team members: Gaurav, Sukhbir,Sunny)*
 
-Use in Notion / Trello / Jira / GitHub Projects.
-
 ---
 
 # COLUMNS:
@@ -376,14 +374,14 @@ Use in Notion / Trello / Jira / GitHub Projects.
 
 | Task | Owner | Priority | Notes |
 |------|--------|----------|-------|
-| Add full dark-mode theme | Sukhbir | Medium | Extend token system |
-| Add product comparison table | Person 2 | Low | New component |
-| Add micro-interactions to footer icons | Person 2 | Low | Hover pulses |
-| Reduce layout shift (CLS optimization) | Person 3 | Medium | Image height placeholders |
-| Convert store locator to functional version | Sukhbir | High | JS integration |
-| Add sticky filter bar to All Flavors page | Person 2 | Medium | New UI pattern |
-| Add cart slide-out drawer | Sukhbir | Medium | Pure CSS version possible |
-| Add accessibility validation summary | Person 3 | High | WCAG AAA test |
+| Add full dark-mode theme   | Medium | Extend token system |
+| Add product comparison table  | Low | New component |
+| Add micro-interactions to footer icons  | Low | Hover pulses |
+| Reduce layout shift (CLS optimization)  | Medium | Image height placeholders |
+| Convert store locator to functional version  | High | JS integration |
+| Add sticky filter bar to All Flavors page  | Medium | New UI pattern |
+| Add cart slide-out drawer  | Medium | Pure CSS version possible |
+| Add accessibility validation summary  | High | WCAG AAA test |
 
 ---
 
