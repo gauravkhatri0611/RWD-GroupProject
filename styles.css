@@ -2996,18 +2996,24 @@ img {
 
 /* animated gradient for "VARIETY PACK" / "LIMITED" badges on cards */
 
-.badge,
-.product-eyebrow {
+.badge{
   background-image: linear-gradient(
     120deg,
-    #ff2c8b,
-    #c01461,
-    #9b4dff,
-    #ff2c8b
+    #ff4fa6,
+    #d72e87,
+    #8c4bff,
+    #5a2dff
   );
-  background-size: 220% 220%;
-  animation: badgeShimmer 7s linear infinite;
+  background-size: 300% 300%;
+  animation: shimmerWave 5s ease-in-out infinite;
 }
+
+@keyframes shimmerWave {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .flavor-badge {
   background-image: linear-gradient(
